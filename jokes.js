@@ -1,1 +1,10 @@
-document.getElementById("edit").innerHTML = "Matt"
+var jokeArray = {
+
+}
+var answerArray = {
+
+}
+
+function answer() {
+  document.getElementById("answer").innerHTML = "Matt"
+}
