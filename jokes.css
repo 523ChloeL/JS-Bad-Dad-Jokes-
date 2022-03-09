@@ -1,23 +1,29 @@
+html {
+  height: 100%;
+}
+
 body {
   color: white;
-  background-image: linear-gradient(to bottom right, #37ffac, #5784ba);
+  background: linear-gradient(to bottom right, #37ffac, #5784ba);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-shadow: 3px 3px 0px black;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 }
+
 .container {
   text-align: center;
 }
-a{
+
+a {
   width: 50px;
   height: 50px;
   text-shadow: none;
   text-decoration: none;
 }
-button
-{
+
+button {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   background-color: #6eb5ff;
   cursor: url('img\scream.png'), auto;
@@ -27,14 +33,16 @@ button
   width: 100px;
   height: 30px;
 }
+
 a:visited {
   color: white;
 }
+
 li {
   list-style-type: none;
 }
-button:hover
-{
+
+button:hover {
   background-color: #30156f;
   transition: 2s;
 }

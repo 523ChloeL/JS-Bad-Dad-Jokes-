@@ -1,26 +1,22 @@
-var jokeArray = {
+var jokeArray = [
   'What do you call a penguin in the White House?',
   'What do you call a man with no arms or legs, laying in front of your door?'
-}
-var answerArray = {
+]
+var answerArray = [
   'Lost',
   'Matt'
-}
-var newJoke = 	Math.floor(Math.random() * jokeArray.length);
-	document.getElementById('joke').textContent = (jokeArray[newJoke].value);
-function answer() {
-  document.getElementById('answer').textContent = answerArray[newJoke-1];
-}
-var IsCalledOnce = false;
+]
+let newJoke = 0;
 
-function master()
-{
- if(IsCalledOnce)
-{
-  newJoke();
-}else
-{
- answer();
+randomJoke();
+
+// function to create a random # and then use that rndm # as the index we select from our joke list
+function randomJoke() {
+  newJoke = Math.floor(Math.random() * jokeArray.length);
+  document.getElementById('joke').textContent = (jokeArray[newJoke]);
+  document.getElementById('answer').textContent = ' ';  
 }
-IsCalledOnce = true;
+function answer() {
+  document.getElementById('answer').textContent = answerArray[newJoke];
+
 }

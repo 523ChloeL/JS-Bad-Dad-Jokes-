@@ -8,22 +8,33 @@
   <link rel="icon" href="img\kekw.jpg" type="image/png">
   <link rel="stylesheet" href="jokes.css">
 </head>
+
 <body>
   <div>
     <div>
-      <div class="navbar">
-        <a  href="index.html">Home</a></a>
-        <a  href="memes.html">Memes</a></a>
+      <nav class="navbar">
+        <div class="container">
+          <h1 class="logo">Jokes</h1>
+          <h2>
+            <button><a href="index.html">Jokes</a></button>
+            <button><a href="memes.html">Memes</a></button>
+          </h2>
         </div>
+      </nav>
     </div>
-    <h1>JOKES</h1>
     <div class="container">
-    <h2 id="joke">
-      Do you want to hear a joke?
-    </h2>
-    <p id="answer"></p>
-    <button type="button" onclick=master();>Click for Answer!</button>
-  </div>
+
+      <h2 id="joke">
+
+        Do you want to hear a joke?
+
+      </h2>
+
+      <p id="answer"></p>
+
+      <button type="button" onclick=randomJoke();>New Joke</button>
+      <button type="button" onclick=answer();>Click for Answer!</button>
+    </div>
 
 </body>
 <script src="background.js"></script>
