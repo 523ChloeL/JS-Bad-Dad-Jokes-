@@ -1,4 +1,4 @@
-var myPix = new Array[
+var memeArray = new Array[
 	"img\grandpaNose.jpg",
 	 "img\innerChild.jpg",
 	 "img\minecraftHeart.jpg",
@@ -9,7 +9,9 @@ var myPix = new Array[
 	 "________",
 	 "________",
 ];
+window.onload = newMeme;
+
 function newMeme() {
-	var randomNum = Math.floor(Math.random() * myPix.length);
-     document.getElementById("myPicture").src = myPix[randomNum];
+	var randomMeme = Math.floor(Math.random() * memeArray.length);
+     document.getElementById('meme').style.backgroundImage = memeArray[randomMeme];
 }

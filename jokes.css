@@ -33,6 +33,9 @@ button {
   width: 100px;
   height: 30px;
 }
+.meme {
+  background-image: url('img\loadingMeme.jpg');
+}
 
 a:visited {
   color: white;
