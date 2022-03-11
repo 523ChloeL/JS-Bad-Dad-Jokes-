@@ -33,7 +33,7 @@ button {
   width: 100px;
   height: 30px;
 }
-.meme {
+#meme {
   background-image: url('img\loadingMeme.jpg');
 }
 
