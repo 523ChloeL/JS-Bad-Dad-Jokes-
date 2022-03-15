@@ -11,7 +11,7 @@
 
 <body>
   <div>
-    <div>
+    <div class="memeCard">
       <nav class="navbar">
         <div class="container">
           <h1 class="logo">Memes</h1>
@@ -21,17 +21,13 @@
           </h2>
         </div>
       </nav>
-      <div class="container">
-        <h4 id="joke">
+        <h4>
           Do you want to see some memes?
         </h4>
-        <div id="meme" onclick=newMeme();></div>
-        <button type=button>New One!</button>
+        <img id="meme" src="img\loadingMeme.jpg" alt="meme"><br>
+        <button type=button onclick=newMeme();>New One!</button>
       </div>
-    </div>
   </div>
   <script src="meme.js"></script>
 </body>
-
-
 </html>
